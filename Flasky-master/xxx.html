@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flasky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="navbar navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+			<a href="/" class="navbar-brand">Flasky</a>
+		</div>
+		<div class="navbar-collapse collapse">
+
+			<ul class="nav navbar-nav">
+
+				<li><a href="/u/11">首页</a></li>
+
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+		        <li><a href="/u/11/account">账户信息</a></li>
+		        <li><a href="/download/flasky.apk">下载app</a></li>
+		        <li><a href="/logout">退出</a></li>
+		    </ul>
+
+		</div>
+	</div>
+</div>
+
+
+	<div class="container">
+
+
+
+
+<ul class="nav nav-tabs">
+
+	<li role="presentation" class="active"><a href="/u/11/add">新增</a></li>
+  	<li role="presentation"><a href="/u/11/search">查找</a></li>
+
+  	<li role="presentation"><a href="/u/11">学生信息</a></li>
+</ul>
+<p>
+
+</p>
+
+
+<form action="" method="post"
+  class="form" role="form">
+  <input id="csrf_token" name="csrf_token" type="hidden" value="ImUwZmE0NGMzOWUyMDg5MmZiMjVkNTk0NTEzNGNkNjNiM2EzNmI2ZWMi.D7UXQg.geVPLSvh9SZ_z1CzocAPMN4G19E">
+
+
+
+
+
+
+
+
+<div class="form-group  has-error required"><label class="control-label" for="stu_id">学生学号</label>
+
+          <input class="form-control" id="stu_id" name="stu_id" required type="text" value="00001">
+
+            <p class="help-block">有点短?有点长?</p>
+  </div>
+
+
+
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="name">学生姓名</label>
+
+          <input class="form-control" id="name" name="name" required type="text" value="132456">
+
+  </div>
+
+
+
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="cls">专业班级</label>
+
+          <input class="form-control" id="cls" name="cls" required type="text" value="python精通">
+
+  </div>
+
+
+
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="addr">所在寝室</label>
+
+          <input class="form-control" id="addr" name="addr" required type="text" value="001">
+
+  </div>
+
+
+
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="phone">联系方式</label>
+
+          <input class="form-control" id="phone" name="phone" required type="text" value="13883618342">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <input class="btn btn-default" id="add" name="add" type="submit" value="添加吧皮卡丘!">
+
+
+
+
+
+
+
+</form>
+
+
+
+	</div>
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

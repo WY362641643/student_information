@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+<table class="table table-bordered table-hover">
+	<thead>
+		<th>名称</th>
+		<th>信息</th>
+	</thead>
+	<tbody>
+        <tr>
+			<td>账户编号</td>
+			<td>{{ user.id }}</td>
+		</tr>
+        <tr>
+			<td>账户名称</td>
+			<td>{{ user.name }}</td>
+		</tr>
+        <tr>
+			<td>教授课程 </td>
+			<td>{{ user.course }}</td>
+		</tr>
+		<tr>
+			<td>账户邮箱</td>
+			<td>{{ user.email }}</td>
+		</tr>
+        <tr>
+			<td>账户密码</td>
+			<td>{{ user.password }}</td>
+		</tr>
+		<tr>
+			<td>账户身份</td>
+			<td>{{ user.role }}</td>
+		</tr>
+        <tr>
+			<td>是否是班主任</td>
+			<td>{% if user.role %}
+            是{% else %}不是
+            {% endif %}</td>
+		</tr>
+		<tr>
+			<td>学生数目</td>
+			<td>{{ num }}</td>
+		</tr>
+		<tr>
+			<td>随机串码</td>
+			<td>{{ user.active_code }}</td>
+		</tr>
+		<tr>
+			<td>通过验证</td>
+			<td>{{ user.active_state }}</td>
+		</tr>
+	</tbody>	
+</table>
+{% endblock %}
